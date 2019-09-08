@@ -1,0 +1,6 @@
+data
+dist
+node_modules
+build
+streaming-log.txt
+!/data/nodes.json

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Decision = ({ defaultDecision, timeout, items, onClick, rwh, rhw, Video }) => {
+const Decision = ({ defaultDecision, timeout, items, onClick, rwh, rhw }) => {
     const handleOnClick = (d) => {
         if (onClick) {
             onClick(d);
@@ -38,13 +38,6 @@ const Decision = ({ defaultDecision, timeout, items, onClick, rwh, rhw, Video })
                     onFocus={() => {}}
                     onBlur={() => {}}
                 >
-                    <Video
-                        id={d.type}
-                        loop
-                        width={80 / rwh}
-                        height={60 / rhw}
-                        src={`http://localhost:8181/mp4/${d.path}`}
-                    />
                     <p className="decision-item">{d.desc}</p>
                 </div>
             ))}

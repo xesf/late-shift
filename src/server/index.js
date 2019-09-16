@@ -24,7 +24,7 @@ app.use(express.static('public', options));
 app.use('/metadata', express.static('../metadata'));
 app.use('/data', express.static('../data'));
 
-app.listen(process.env.port || 8181, process.env.host || '0.0.0.0');
+app.listen(process.env.port || 8282, process.env.host || '0.0.0.0');
 
 app.use(morgan('combined', { stream: logStream}));
 app.use(cors());

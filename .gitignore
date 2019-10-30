@@ -4,3 +4,6 @@ node_modules
 build
 streaming-log.txt
 !/data/nodes.json
+_data
+index-lib.js
+yarn-error.log
